@@ -1,0 +1,38 @@
+{
+  "display": "TypeScript compiler",
+
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "preserve",
+
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "useDefineForClassFields": true,
+
+    "baseUrl": "./",
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ESNext.AsyncIterable"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@*": ["./src/*"],
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
+
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"]
+    },
+    "types": ["@types/node"]
+  },
+
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist", "public"]
+}

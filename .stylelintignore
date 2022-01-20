@@ -1,0 +1,17 @@
+node_modules
+node_modules/
+static/
+build/
+assets/scss/vendors/
+assets/scss/templates/
+.output/
+dist/
+bin/
+obj/
+
+*.*
+!*.vue
+!*.html
+!*.postcss
+!*.pcss 
+!*.css 
