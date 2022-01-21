@@ -1,6 +1,6 @@
 /* eslint-env node */
 // eslint-disable-next-line unicorn/prefer-module
-require('@rushstack/eslint-patch/modern-module-resolution');
+import '@rushstack/eslint-patch/modern-module-resolution';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -18,19 +18,10 @@ const alias = {
 };
 
 // eslint-disable-next-line unicorn/prefer-module
-module.exports = {
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 'latest',
-    parser: '@typescript-eslint/parser',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+export default {
+  parser: '@typescript-eslint/parser',
 
   env: {
-    'vue/setup-compiler-macros': true,
     browser: true,
     es6: true,
     node: true,
@@ -38,22 +29,17 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:vue/vue3-recommended',
-    'plugin:vue/vue3-essential',
+
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
 
     'plugin:sonarjs/recommended',
-    '@vue/eslint-config-typescript/recommended',
-
-    'plugin:sonarjs/recommended',
-
-    '@vue/eslint-config-prettier',
   ],
 
   plugins: [
-    'vue',
+    '@typescript-eslint',
     'unicorn',
     'import',
     'package-json',
@@ -68,12 +54,10 @@ module.exports = {
 
   root: true,
   rules: {
+    'no-var': 2,
+
     'no-undef': 0,
     'no-import-assign': 2,
-    'vue/script-setup-uses-vars': 1,
-    'vue/no-unused-vars': 1,
-
-    'vue/component-tags-order': [2, { order: ['template', 'script', 'style'] }],
 
     'max-len': [
       2,
@@ -100,19 +84,8 @@ module.exports = {
     '@typescript-eslint/naming-convention': 0,
     '@typescript-eslint/prefer-namespace-keyword': 2,
 
-    'vue/multi-word-component-names': [
-      0,
-      {
-        ignores: [],
-      },
-    ],
-
     // line
-    'vue/no-template-key': 2,
-    'vue/no-v-for-template-key': 0,
-    'vue/no-v-for-template-key-on-child': 0,
-    'vue/require-v-for-key': 2,
-    'vue/valid-v-for': 2,
+
     'space-before-function-paren': [0, 'always'],
 
     semi: [2, 'always'],
@@ -285,9 +258,7 @@ module.exports = {
     'unicorn/template-indent': 1,
     'unicorn/throw-new-error': 2,
 
-    'prettier-vue/prettier': [0, { delete: true }],
     'prettier/prettier': [0, {}, { usePrettierrc: true }],
-    'prettier/prettier-vue': [0, {}, { usePrettierrc: true }],
   },
   settings: {
     'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
@@ -305,28 +276,6 @@ module.exports = {
       'eslint-import-resolver-custom-alias': {
         alias,
         extensions: arrayType,
-      },
-    },
-    'prettier-vue': {
-      // Settings for how to process Vue SFC Blocks
-      SFCBlocks: {
-        template: true,
-        script: true,
-        style: true,
-
-        // Settings for how to process custom blocks
-        customBlocks: {
-          docs: { lang: 'markdown' },
-          config: { lang: 'json' },
-          module: { lang: 'js' },
-          comments: false,
-        },
-      },
-      usePrettierrc: true,
-
-      fileInfoOptions: {
-        ignorePath: '.testignore',
-        withNodeModules: false,
       },
     },
   },

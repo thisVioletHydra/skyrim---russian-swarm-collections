@@ -4,7 +4,7 @@
   "compilerOptions": {
     "moduleResolution": "Node",
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "CommonJS",
     "jsx": "preserve",
 
     "noImplicitAny": true,

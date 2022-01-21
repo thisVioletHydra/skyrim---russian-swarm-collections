@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>skyrim-translate-swarm-collections</moduleName>
+  <moduleImage path=":\Pictures\02-10-2021 00-26-07.png"/>
+  <installSteps order="Explicit">
+    <installStep name="StepOne">
+      <optionalFileGroups order="Explicit">
+        <group name="Auto-select" type="SelectAny">
+          <plugins order="Explicit">
+            <plugin name="1nivWICCloaks">
+              <description>1nivWICCloaks translate</description>
+              <files>
+                <file source="source\Category\Any\1nivWICCloaks.esp" destination="1nivWICCloaks.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="1nivWICCloaks.esp" state="Missing"/>
+                        <fileDependency file="1nivWICCloaks.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="1nivWICCloaks.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="AutoSave_Minimalistic">
+              <description>AutoSave_Minimalistic translate</description>
+              <files>
+                <file source="source\Category\Any\AutoSave_Minimalistic.esp" destination="AutoSave_Minimalistic.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="AutoSave_Minimalistic.esp" state="Missing"/>
+                        <fileDependency file="AutoSave_Minimalistic.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="AutoSave_Minimalistic.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="AVExpansion">
+              <description>AVExpansion translate</description>
+              <files>
+                <file source="source\Category\Any\AVExpansion.esp" destination="AVExpansion.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="AVExpansion.esp" state="Missing"/>
+                        <fileDependency file="AVExpansion.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="AVExpansion.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="AwesomePotionsSimp_CACO">
+              <description>AwesomePotionsSimp_CACO translate</description>
+              <files>
+                <file source="source\Category\Any\AwesomePotionsSimp_CACO.esp" destination="AwesomePotionsSimp_CACO.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="AwesomePotionsSimp_CACO.esp" state="Missing"/>
+                        <fileDependency file="AwesomePotionsSimp_CACO.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="AwesomePotionsSimp_CACO.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="BarenziahQuestMarkers Rus 1.3.1">
+              <description>BarenziahQuestMarkers Rus 1.3.1 translate</description>
+              <files>
+                <file source="source\Category\Any\BarenziahQuestMarkers Rus 1.3.1.esp" destination="BarenziahQuestMarkers Rus 1.3.1.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="BarenziahQuestMarkers Rus 1.3.1.esp" state="Missing"/>
+                        <fileDependency file="BarenziahQuestMarkers Rus 1.3.1.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="BarenziahQuestMarkers Rus 1.3.1.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Cloaks">
+              <description>Cloaks translate</description>
+              <files>
+                <file source="source\Category\Any\Cloaks.esp" destination="Cloaks.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Cloaks.esp" state="Missing"/>
+                        <fileDependency file="Cloaks.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Cloaks.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Headhunter - Bounties Redone">
+              <description>Headhunter - Bounties Redone translate</description>
+              <files>
+                <file source="source\Category\Any\Headhunter - Bounties Redone.esp" destination="Headhunter - Bounties Redone.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Headhunter - Bounties Redone.esp" state="Missing"/>
+                        <fileDependency file="Headhunter - Bounties Redone.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Headhunter - Bounties Redone.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Sexier Vanilla - Guards All in One">
+              <description>Sexier Vanilla - Guards All in One translate</description>
+              <files>
+                <file source="source\Category\Any\Sexier Vanilla - Guards All in One.esp" destination="Sexier Vanilla - Guards All in One.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Sexier Vanilla - Guards All in One.esp" state="Missing"/>
+                        <fileDependency file="Sexier Vanilla - Guards All in One.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Sexier Vanilla - Guards All in One.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Trophies">
+              <description>Trophies translate</description>
+              <files>
+                <file source="source\Category\Any\Trophies.esp" destination="Trophies.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Trophies.esp" state="Missing"/>
+                        <fileDependency file="Trophies.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Trophies.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="UnreadBooksGlow">
+              <description>UnreadBooksGlow translate</description>
+              <files>
+                <file source="source\Category\Any\UnreadBooksGlow.esp" destination="UnreadBooksGlow.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="UnreadBooksGlow.esp" state="Missing"/>
+                        <fileDependency file="UnreadBooksGlow.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="UnreadBooksGlow.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Weighted - ALL">
+              <description>Weighted - ALL translate</description>
+              <files>
+                <file source="source\Category\Any\Weighted - ALL.esp" destination="Weighted - ALL.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Weighted - ALL.esp" state="Missing"/>
+                        <fileDependency file="Weighted - ALL.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Weighted - ALL.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Trophies">
+              <description>Trophies translate</description>
+              <files>
+                <file source="source\Category\Gameplay\Trophies Addon for HeadHunter\Trophies.esp" destination="Trophies.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Trophies.esp" state="Missing"/>
+                        <fileDependency file="Trophies.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Trophies.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="PyP_Legendary">
+              <description>PyP_Legendary translate</description>
+              <files>
+                <file source="source\Category\NPC\PyP SE - Protect Your People SE\PyP_Legendary.esp" destination="PyP_Legendary.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="PyP_Legendary.esp" state="Missing"/>
+                        <fileDependency file="PyP_Legendary.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="PyP_Legendary.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="McmRecorder">
+              <description>McmRecorder translate</description>
+              <files>
+                <file source="source\Category\Utilities\MCM Recorder\McmRecorder.esp" destination="McmRecorder.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="McmRecorder.esp" state="Missing"/>
+                        <fileDependency file="McmRecorder.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="McmRecorder.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+            <plugin name="Lux">
+              <description>Lux translate</description>
+              <files>
+                <file source="source\Category\Visuals and Graphics\Lux\Lux.esp" destination="Lux.esp" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="Or">
+                        <fileDependency file="Lux.esp" state="Missing"/>
+                        <fileDependency file="Lux.esp" state="Inactive"/>
+                      </dependencies>
+                      <type name="NotUsable"/>
+                    </pattern>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Lux.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+</config>
